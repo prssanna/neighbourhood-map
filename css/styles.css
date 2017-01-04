@@ -1,0 +1,126 @@
+      html,
+      body {
+        font-family: Arial, sans-serif;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+
+      }
+
+      p.title {
+        margin-left: 40px;
+      }
+
+      .title {
+        color:white;
+      }
+
+      .iw {
+        background-color:black;
+        color:antiquewhite;
+      }
+
+      .container {
+        height: 100%;
+        position: relative;
+      }
+
+      #hide-markers,
+      #show-markers {
+        width: 60%;
+        margin-left: 5px;
+        margin-right: 5px;
+        color:black;
+        background-color: white;
+      }
+
+      .listing-buttons {
+        width:80%;
+      }
+
+      hr {
+        background: #D0D7D9;
+        height: 1px;
+        margin: 20px 0 20px 0;
+        width: 100%;
+        border: none;
+      }
+
+      #location-list, #search-results {
+        list-style: none;
+        color: antiquewhite;
+      }
+
+      .comments {
+        list-style: none;
+      }
+
+      .comments p {
+        font-weight: 300;
+      }
+
+      #map {
+        bottom:0px;
+        height: 100%;
+
+        position: absolute;
+        right: 0px;
+        width: 70vw;
+
+      }
+
+      .options-box {
+        background-color: black;
+        float:left;
+        overflow-y: auto;
+        width: 28vw;
+        border-bottom: none;
+        height: 100vh;
+        line-height: 35px;
+        padding: 10px 10px 30px 10px;
+        text-align: left;
+      }
+
+      .search-bar {
+        margin-bottom: 10px;
+        height: 20%;
+        width: 80%;
+        font-size: 1.1em;
+        font-weight: 100;
+      }
+
+      .search-title {
+        margin-bottom: 0px;
+        margin-top: 10px;
+        font-size: 1.2em;
+        color: white;
+      }
+
+      #search-results, #location-list li {
+        cursor:pointer;
+      }
+
+      .text {
+        font-size: 1em;
+      }
+
+      @media screen and (max-width: 600px) {
+        #hide-markers,
+         #show-markers {
+            width:40%;
+            margin-left: 5px;
+            margin-right: 5px;
+
+        }
+        .options-box {
+          width: 100%;
+          overflow-y: auto;
+          height: 30%;
+        }
+        #map {
+          left:0px;
+          top:30%;
+          width:100%;
+        }
+
+      }

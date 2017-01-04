@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+  <title>Juhu Restaurants Map</title>
+  <meta name="viewport" width="device-width" content="initial-scale=1.0, user-scalable=no">
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/styles.css">
+
+
+</head>
+<body>
+  <main class="container">
+    <div class="options-box">
+      <div class="search">
+        <p class="search-title"> Search Places: </p>
+        <input class="search-bar" type="text" name="searchplaces" data-bind="value: query, valueUpdate: 'keyup'">
+        </ul>
+      </div>
+      <hr>
+      <div class = "listing-buttons">
+        <input id="show-markers" type="button" value="Show Markers" data-bind="click: showMarkers">
+        <input id="hide-markers" type="button" value="Hide Markers" data-bind="click: hideMarkers">
+        <p class="title">LOCATIONS</p>
+        <ul id="location-list" data-bind="foreach: search">
+          <li data-bind="text: title, click: populateInfoWindow"></li>
+        </ul>
+      </div>
+    </div>
+    <div class="map" id="map"></div>
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.0/knockout-min.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+  <script src="js/app.js"></script>
+
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBP63_g7P9RSo6vGMH-jfqSB-_TjRoixog&v=3&callback=start" onerror="error()"></script>
+
+</body>
+</html>
